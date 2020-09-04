@@ -5,31 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
-    <title>Document</title>
+    <title>biovoid</title>
 </head>
 
 <body>
     <div class="main">
         <div class="header">
-
-            <div class="logo">
-                <img src="./images/Logo.png" alt="biovoid">
-            </div>
-            <div class="menu">
+            <img id="logo" src="./images/Logo.png" alt="biovoid">
+            <nav class="menu">
                 <ul>
                     <li class="blue"><a href="#">Главная</a></li>
-                    <li class="purpul selected"><a href="#">Продукция</a></li>
+                    <li class="purpul active"><a href="#">Продукция</a></li>
                     <li class="green"><a href="#">Услуги</a></li>
-                    <li class="red active"><a href="#">О нас</a></li>
+                    <li class="red"><a href="#">О нас</a></li>
                     <li class="orang"><a href="#">Контакты</a></li>
                 </ul>
-            </div>
+            </nav>
         </div>
         <div class="content">
             <div class="top-bar">
-                <div class="title">
-                    <h1>Assistant Interface Debugger</h1>
-                </div>
+                <h1>Assistant Interface Debugger</h1>
+
                 <div class="controls">
                     <div class="control">
                         <a class="block" href="#">Скачать наш прайс</a>
@@ -43,117 +39,128 @@
                     </div>
                 </div>
             </div>
-            <div class="product-info">
-                <div class="product-links">
-                    <div class="description">
-                        <p>Описание продукта</p>
+        </div>
+        <div class="product-info clearfix">
+            <div class="product-links">
+                <div class="description">
+                    <a href="#">Описание продукта</a>
+                </div>
+                <div class="flex">
+                    <div class="download">
+                        <a href="#">Скачать</a>
+                        <p> <small> Докум-ция, программы и драйверы </small></p>
                     </div>
-                    <div class="flex">
-                        <div class="download">
-                            <p>Скачать</p>
-                            <p> <small> Докум-ция, программы и драйверы </small></p>
-                        </div>
-                        <div class="examples">
-                            <p>Примеры</p>
-                            <p>C# API</p>
-                        </div>
-                        <div class="video">
-                            <p>Видео</p>
-                            <p> <small>Смотреть</small></p>
-                        </div>
+                    <div class="examples">
+                        <a href="#">Примеры</a>
+                        <p>C# API</p>
                     </div>
                 </div>
-                <div class="foto clearfix">
-                    <img src="./images/Товар.png" alt="foto">
+                <div class="video">
+                    <a href="#">Видео</a>
+                    <p> <small>Смотреть</small></p>
                 </div>
-
             </div>
-            <div class="product-description">
-                <h2> Описание продукта</h2>
-                <p>
-                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
-                    стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник
-                    создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
-                    Lorem
-                    Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный
-                    дизайн.
-                    Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х
-                    годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах
-                    которых
-                    используется Lorem Ipsum. </p>
+            <div class="foto">
+                <img src="./images/biovoid.png" alt="foto">
+            </div>
 
-                <p>
-                    Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem
-                    Ipsum
-                    используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также
-                    реальное
-                    распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш
-                    текст..
-                    Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML
-                    используют
-                    Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу
-                    показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы
-                    текст
-                    Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно
-                    (например,
-                    юмористические варианты).
-                    Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.
-                </p>
-                < </div>
-                    <div class="colors">
-                        <div class="green-1">
-                            <h3>High-Speed CAN</h3>
-                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
-                                является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий
-                                безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem
-                                Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных
-                                изменений пять веков, но и перешагнул в электронный дизайн.</p>
-                        </div>
-                        <div class="orang-1">
-                            <h4> I2C </h4>
-                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
-                                является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий
-                                безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem
-                                Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных
-                                изменений пять веков, но и перешагнул в электронный дизайн.</p>
-                        </div>
-                        <div class="blue-1">
-                            <h5>UART/RS232 </h5>
-                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
-                                является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий
-                                безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem
-                                Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных
-                                изменений пять веков, но и перешагнул в электронный дизайн.</p>
-                        </div>
-                    </div>
+        </div>
+        <div class="product-description">
+            <h2> Описание продукта</h2>
+            <p>
+                Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
+                стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник
+                создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
+                Lorem
+                Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный
+                дизайн.
+                Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х
+                годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах
+                которых
+                используется Lorem Ipsum. </p>
+
+            <p>
+                Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem
+                Ipsum
+                используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также
+                реальное
+                распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш
+                текст..
+                Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML
+                используют
+                Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу
+                показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы
+                текст
+                Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно
+                (например,
+                юмористические варианты).
+                Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.
+            </p>
+        </div>
+        <div class="colors">
+            <div class="CAN">
+                <h3>High-Speed CAN</h3>
+                <div class="CAN-green"></div>
+                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
+                    является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий
+                    безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem
+                    Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных
+                    изменений пять веков, но и перешагнул в электронный дизайн.</p>
+            </div>
+            <div class="I2C">
+                <h4> I2C </h4>
+                <div class="I2C-orang"></div>
+                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
+                    является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий
+                    безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem
+                    Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных
+                    изменений пять веков, но и перешагнул в электронный дизайн.</p>
+            </div>
+            <div class="UART">
+                <h5>UART/RS232 </h5>
+                <div class="UART-blue"></div>
+                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
+                    является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий
+                    безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem
+                    Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных
+                    изменений пять веков, но и перешагнул в электронный дизайн.</p>
             </div>
         </div>
-        <footer>
-            <div class="row">
-                <p>
-                    Форма обратной связи </p>
-                <p> разработка,модификация или посто вопросы по модулю... архив новостей
-                </p>
-            </div>
-            <form class="row-form">
-                <p>
-                    <select name="attending">
-                        <option value="">Выберите тип обращения</option>
-                    </select>
-                </p>
-                <div class="form-group">
-                    <input type="text" id="name" required><label for="name">Имя</label>
-                    <input type="email" id="email" required><label for="email">Email</label>
-                    <input type="text" id="phone" required><label for="phone">Телефон</label>
-                </div>
-                <div class="form-row-icon">
-                    <textarea placeholder="Сообщение*" rows="3"></textarea>
-                    <p>
-                        <input type="submit" value="Отправить"></p>
-                </div>
     </div>
-    </form>
-    </footer>
+    </div>
+        <div class="row">
+            <p>
+                Форма обратной связи </p>
+            <p> разработка,модификация или посто вопросы по модулю... архив новостей
+            </p>
+        </div>
+        <form id="back" class="row-form">
+            <div class="flex-form">
+           
+            <div class="form-group">
+                 <p>
+                <select name="attending">
+                    <option value="">Выберите тип обращения</option>
+                </select>
+            </p>
+                <input type="text" placeholder="Имя">
+                <input type="email" placeholder="E-mail">
+                <input type="text" placeholder="Телефон">
+            </div>
+            <div class="flex-row">
+            
+            <div class="form-row-icon">
+                <textarea placeholder="Сообщение*" rows="6" cols="90"></textarea>
+                <p><input type="submit" value="Отправить"></p>
+            </div>
+            </div>
+            </div>
+        </form>
+        <footer>
+            <p>
+                © 2012-2013 Biovoid. Все права защищены.
+            </p>
+        </footer>
     </div>
 
     </div>

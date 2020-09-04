@@ -140,8 +140,12 @@ label {
     display: block;
 }
 
+body {
+    width: 1200px;
+}
+
 .main {
-    margin          : 0 auto;
+
     background-color: white;
 }
 
@@ -153,17 +157,18 @@ label {
 }
 
 .logo {
-    width: 50%;
+    width: 40%;
 }
 
 .menu {
-    width: 50%;
+    width: 60%;
 }
 
 .menu ul {
     margin    : 0;
     padding   : 0;
     list-style: none;
+    font-size : 0;
 }
 
 .menu li {
@@ -201,21 +206,17 @@ label {
 
 .red {
     border-bottom: 1px solid #d44a26;
-    display      : block;
-
 }
 
-.red>a {
-    color              : red;
-    background         : url(/images/sprite.png);
-    background-position: -90px;
+.red:hover {
+    color: red;
 }
 
 .orang {
     border-bottom: 1px solid #f0a427;
 }
 
-.selected:before {
+.active:before {
     content      : "";
     position     : absolute;
     bottom       : -11px;
@@ -242,6 +243,7 @@ h1 {
 }
 
 .top-bar {
+    width          : 1000px;
     display        : flex;
     align-items    : center;
     justify-content: space-between;
@@ -265,6 +267,7 @@ h1 {
 
 
 .block {
+    color              : #ffffff;
     text-align         : center;
     padding            : 10px 10px;
     display            : block;
@@ -281,16 +284,14 @@ h1 {
 
 
 form {
-    position  : relative;
-    width     : 300px;
-    background: #ffffff;
+    position: relative;
+    display : inline-block;
 }
 
 input,
 button {
     background: transparent;
-    left      : -15%;
-    border    : 1px solid #cccccc;
+    border    : 2px solid #cccccc;
 }
 
 input {
@@ -300,10 +301,11 @@ input {
 }
 
 button {
-    width        : 5px;
     box-sizing   : content-box;
-    height       : 10px;
-    position     : relative;
+    height       : 6px;
+    position     : absolute;
+    left         : 180px;
+    bottom       : 50%;
     border-radius: 50%;
 }
 
@@ -313,8 +315,8 @@ button:before {
     font-size   : 18px;
     display     : inline-block;
     position    : absolute;
-    right       : -1px;
-    bottom      : -8px;
+    right       : -2px;
+    bottom      : -9px;
     border-width: 0;
     background  : #cccccc;
     width       : 3px;
@@ -331,7 +333,7 @@ button:before {
 }
 
 .product-info {
-    margin     : 0 auto;
+    width      : 1000px;
     position   : relative;
     color      : white;
     font-family: "Segoe UI";
@@ -352,13 +354,9 @@ button:before {
 }
 
 .flex {
-    flex-basis    : 300px;
-    flex-shrink   : 0;
     display       : flex;
+    max-width     : 1000px;
     flex-direction: column;
-    flex-wrap     : wrap;
-
-
 }
 
 .description {
@@ -392,6 +390,11 @@ button:before {
 }
 
 .video {
+    min-height         : 150px;
+    margin-left        : 320px;
+    margin-top         : -153px;
+    flex-basis         : 150px;
+    flex-shrink        : 0;
     width              : 158px;
     height             : 168px;
     border             : 1px solid #ffc40d;
@@ -406,15 +409,14 @@ button:before {
 }
 
 .foto {
-    margin-left: 100px;
-    border     : 3px solid #f1f1f1;
-    box-shadow : 0 47px 15px -45px rgba(0, 0, 0, 0.5);
-    ;
+
+    border    : 3px solid #f1f1f1;
+    box-shadow: 0 47px 15px -45px rgba(0, 0, 0, 0.5);
 }
 
 /* text */
 .product-description {
-    margin     : 0 auto;
+    width      : 1000px;
     padding    : 20px;
     color      : #000000;
     font-family: "Segoe UI";
@@ -430,7 +432,7 @@ h2 {
 }
 
 .colors {
-    margin     : 0 auto;
+    width      : 1000px;
     color      : #000000;
     font-family: "Segoe UI";
     font-size  : 14px;
@@ -459,35 +461,70 @@ h5 {
     color: #2d89ef;
 }
 
-.green-1 {
-    border           : 1px solid #cccccc;
-    border-left-color: #00a300;
-    border-left-style: solid;
-    border-left-width: 19px;
-    padding-left     : 10px;
-    margin-bottom    : 10px;
+.CAN {
+    position            : relative;
+    display             : block;
+    border              : 1px solid #cccccc;
+    /* border-left-color: #00a300;*/
+    border-left-style   : solid;
+    border-left-width   : 19px;
+    padding-left        : 10px;
+    margin-bottom       : 10px;
 }
 
-.orang-1 {
-    border           : 1px solid #cccccc;
-    border-left-color: #ffc40d;
-    border-left-style: solid;
-    border-left-width: 19px;
-    padding-left     : 10px;
-    margin-bottom    : 10px;
+.CAN-green {
+    position        : absolute;
+    width           : 19px;
+    height          : 106px;
+    right           : 100%;
+    top             : -1px;
+    background-color: #00a300;
 }
 
-.blue-1 {
-    border           : 1px solid #cccccc;
-    border-left-color: #2d89ef;
-    border-left-style: solid;
-    border-left-width: 19px;
-    padding-left     : 10px;
+.I2C {
+    position           : relative;
+    display            : block;
+    border             : 1px solid #cccccc;
+    /*border-left-color: #ffc40d;*/
+    border-left-style  : solid;
+    border-left-width  : 19px;
+    padding-left       : 10px;
+    margin-bottom      : 10px;
+}
+
+.I2C-orang {
+    position        : absolute;
+    width           : 19px;
+    height          : 106px;
+    right           : 100%;
+    top             : -1px;
+    background-color: #ffc40d;
+}
+
+.UART {
+    position            : relative;
+    display             : block;
+    border              : 1px solid #cccccc;
+    /* border-left-color: #2d89ef;*/
+    border-left-style   : solid;
+    border-left-width   : 19px;
+    padding-left        : 10px;
+}
+
+.UART-blue {
+    position        : absolute;
+    width           : 19px;
+    height          : 106px;
+    right           : 100%;
+    top             : -1px;
+    background-color: #2d89ef;
 }
 
 /*footer*/
 .row {
-    margin          : 20px auto;
+    margin-top      : 20px;
+    width           : 1000px;
+    position        : relative;
     color           : #ffffff;
     font-family     : "Segoe UI";
     font-size       : 18px;
@@ -497,10 +534,14 @@ h5 {
     background-color: #c3325f;
 }
 
+.back {
+    background: #f1f1f1;
+}
+
 .row::before {
     content      : "";
     position     : absolute;
-    bottom       : -210%;
+    bottom       : -10%;
     width        : 0;
     height       : 0;
     border-left  : 10px solid transparent;
@@ -509,53 +550,102 @@ h5 {
 }
 
 .form-row {
+    position        : relative;
+    width           : 1000px;
+    height          : 213px;
     background-color: #f1f1f1;
 }
 
-.form-group {
-    margin-bottom: 20px;
-    padding      : 10px;
+.flex-form {
+    display  : flex;
+    max-width: 1000px;
 }
 
-.form-group input,
-.form-group label,
-.form-group textarea {
-    display: block;
-    width  : 100%;
-    border : 2px solid #bababa;
-
-}
-
-.form-group input {
-    padding     : 0;
-    line-height : 14px;
-    background  : #ffffff;
-    border-width: 0;
-}
-
-.form-group label {
-    margin-bottom : 5px;
-    text-transform: uppercase;
-    color         : #959595;
-    font-family   : "Segoe UI";
-    font-size     : 14px;
-    font-weight   : 400;
-    line-height   : 14px;
-}
-
-.form-group select {
+select {
+    width      : 310px;
+    margin-top : 10px;
     height     : 31px;
     line-height: 31px;
     padding    : 0 10px;
     background : #ffffff;
-    outline    : none;
+    border     : 2px solid #bababa;
+    color      : #000000;
+    font-family: "Segoe UI";
+    font-size  : 14px;
+    font-weight: 400;
+    line-height: 14px;
+}
+
+.form-group {
+    margin-top: 10px;
+}
+
+.form-group input,
+.form-group textarea {
+    display         : block;
+    width           : 310px;
+    height          : 31px;
+    padding         : 0 20px;
+    margin-top      : 10px;
+    margin-bottom   : 10px;
+    background-color: #ffffff;
+    line-height     : 14px;
+    border          : 2px solid #bababa;
+    font-family     : "Segoe UI";
+    font-size       : 14px;
+    font-weight     : 400;
+}
+
+.flex-row {
+    flex-basis    : 150px;
+    flex-shrink   : 0;
+    margin-top    : 10px;
+    display       : flex;
+    flex-direction: column;
 }
 
 .form-row-icon {
-    position   : relative;
+    flex-basis : 50%;
+    min-height : 150px;
+    margin-left: 10px;
+}
+
+.form-row-icon:first-child {
+    margin-bottom: 10px;
+}
+
+
+}
+
+.form-row-icon {
     color      : #ffffff;
     font-family: "Segoe UI";
     font-size  : 12px;
     font-weight: 400;
     line-height: 14px;
+}
+
+.form-row-icon input[type="submit"] {
+    width        : 114px;
+    height       : 31px;
+    margin-top   : 30px;
+    background   : #c3325f;
+    border-bottom: 2px solid #c3325f;
+    color        : white;
+    font-family  : "Segoe UI";
+    font-size    : 12px;
+    font-weight  : 400;
+    line-height  : 14px;
+}
+
+footer {
+    margin-top      : 20px;
+    padding         : 15px 15px;
+    width           : 1000px;
+    font-family     : "Segoe UI";
+    font-size       : 12px;
+    font-weight     : 400;
+    line-height     : 14px;
+    color           : #3b3b3b;
+    background-color: #f1f1f1;
 }
