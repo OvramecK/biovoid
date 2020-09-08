@@ -173,6 +173,7 @@ body {
 }
 
 .menu li {
+    margin-right: 10px;
     display    : inline-block;
     position   : relative;
     color      : #595756;
@@ -279,7 +280,7 @@ h1 {
     line-height     : 18px;
 }
 
-.block::before {
+.block a:before {
     content            : "";
    /* display            : block;*/
     width              : 19px;
@@ -373,7 +374,7 @@ button:before {
     min-height      : 114px;
 }
 
-.description:before {
+.description a:before {
     content            : "";
    /* display            : block;*/
     width              : 39px;
@@ -382,7 +383,7 @@ button:before {
     background-position: -100px;
 }
 
-.description::after {
+.description a:after {
     content            : "";
     /*display          : block;*/
     width              : 27px;
@@ -399,7 +400,7 @@ button:before {
     border          : 1px solid #00a300;
 }
 
-.download:before {
+.download a:before {
     content            : "";
     /*display          : block;*/
     width              : 38px;
@@ -416,7 +417,7 @@ button:before {
     height          : 70px;
 }
 
-.examples:before {
+.examples a:before {
     content            : "";
     /* display         : block;*/
     width              : 38px;
@@ -437,7 +438,7 @@ button:before {
     background-color: #ffc40d;
 }
 
-.video:before {
+.video a:before {
     content            : "";
     display            : block;
     width              : 27px;
@@ -446,7 +447,7 @@ button:before {
     background-position: -180px;
 }
 
-.video:after {
+.video a:after {
     content            : "";
     /*display          : block;*/
     width              : 27px;
@@ -590,17 +591,13 @@ h5 {
     background-color: #c3325f;
 }
 
-.row::after {
+.row p:after {
     content            : "";
     width              : 31px;
     height             : 32px;
     background-image   : url(./images/sprite.png);
     background-position: -280px;
 
-}
-
-.back {
-    background: #f1f1f1;
 }
 
 .row::before {
