@@ -142,11 +142,11 @@ label {
 
 body {
     width: 1200px;
+    margin: 0 auto;
 }
 
 .main {
     width           : 1000px;
-    margin          : 0 auto;
     background-color: white;
 }
 
@@ -278,14 +278,15 @@ h1 {
     font-family     : "Arial MT";
     font-size       : 12px;
     line-height     : 18px;
+    position: relative;
 }
 
-.block a:before {
+.block a:after {
     content            : "";
-   /* display            : block;*/
+    position: absolute;
     width              : 19px;
     height             : 20px;
-    background-image   : url(./images/sprite.png);
+    background-image   : url(../images/sprite.png);
     background-position: -100px;
 }
 
@@ -371,31 +372,38 @@ button:before {
 
 .description {
     width           : 486px;
-    border          : 1px solid purple;
-    background-color: purple;
+    border          : 1px solid #603cb9;
+    background-color: #603cb9;
     flex-basis      : 100px;
     min-height      : 114px;
+    position: relative;
 }
 
 .description a:before {
     content            : "";
+    position: absolute;
    /* display            : block;*/
     width              : 39px;
     height             : 42px;
-    background-image   : url(./images/sprite.png);
-    background-position: -100px;
+    left: 23%;
+    background-image   : url(../images/sprite.png);
+    background-position: -890px -10px;
 }
 
 .description a:after {
     content            : "";
+    position: absolute;
     /*display          : block;*/
     width              : 27px;
     height             : 27px;
-    background-image   : url(./images/sprite.png);
-    background-position: -100px;
+    background-image   : url(../images/sprite.png);
+    background-position: -94px -10px;
+    top: 60%;
+    right: 5%;
 }
 
 .download {
+    position: relative;
     margin-top      : 10px;
     width           : 300px;
     height          : 70px;
@@ -405,14 +413,17 @@ button:before {
 
 .download a:before {
     content            : "";
+    position: absolute;
     /*display          : block;*/
     width              : 38px;
     height             : 36px;
-    background-image   : url(./images/sprite.png);
-    background-position: -100px;
+    background-image   : url(../images/sprite.png);
+    background-position: -719px -10px;
+    left: 23%;
 }
 
 .examples {
+    position: relative;
     margin-top      : 10px;
     background-color: #2b5797;
     border          : 1px solid #2b5797;
@@ -422,11 +433,13 @@ button:before {
 
 .examples a:before {
     content            : "";
+    position: absolute;
     /* display         : block;*/
-    width              : 38px;
+    width              : 58px;
     height             : 38px;
-    background-image   : url(./images/sprite.png);
-    background-position: -330px;
+    background-image   : url(../images/sprite.png);
+    background-position: -350px -10px;
+    left: 17%;
 }
 
 .video {
@@ -443,20 +456,25 @@ button:before {
 
 .video a:before {
     content            : "";
+    position: absolute;
     display            : block;
-    width              : 27px;
-    height             : 27px;
-    background-image   : url(./images/sprite.png);
-    background-position: -180px;
+    width              : 37px;
+    height             : 37px;
+    background-image   : url(../images/sprite.png);
+    background-position: -191px;
+    left: 32.5%;
 }
 
 .video a:after {
     content            : "";
+    position: absolute;
     /*display          : block;*/
     width              : 27px;
     height             : 27px;
-    background-image   : url(./images/sprite.png);
-    background-position: -100px;
+    background-image   : url(../images/sprite.png);
+    background-position: -46px -10px;
+    top: 75%;
+    right: 53%;
 }
 
 .foto {
@@ -579,7 +597,6 @@ h5 {
 /*footer*/
 .row-f {
     width : 1000px;
-    margin: 0 auto;
 }
 
 .row {
@@ -594,13 +611,15 @@ h5 {
     background-color: #c3325f;
 }
 
-.row p:after {
+.row:after {
     content            : "";
+    position: absolute;
     width              : 31px;
     height             : 32px;
-    background-image   : url(./images/sprite.png);
-    background-position: -280px;
-
+    background-image   : url(../images/sprite.png);
+    background-position: -140px -10px;
+    top: 35%;
+    left: 1px;
 }
 
 .row::before {
@@ -616,7 +635,6 @@ h5 {
 
 .form {
     width     : 1000px;
-    margin    : 0 auto;
     background: #f1f1f1;
 }
 
@@ -707,7 +725,6 @@ select {
 }
 
 footer {
-    margin          : 0 auto;
     margin-top      : 20px;
     padding         : 15px 15px;
     width           : 1000px;
