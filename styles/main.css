@@ -146,6 +146,7 @@ body {
 }
 
 .main {
+    margin: 0 auto;
     width           : 1000px;
     background-color: white;
 }
@@ -596,6 +597,7 @@ h5 {
 
 /*footer*/
 .row-f {
+    margin: 0 auto;
     width : 1000px;
 }
 
@@ -634,6 +636,7 @@ h5 {
 }
 
 .form {
+    margin: 0 auto;
     width     : 1000px;
     background: #f1f1f1;
 }
@@ -725,6 +728,7 @@ select {
 }
 
 footer {
+    margin: 0 auto;
     margin-top      : 20px;
     padding         : 15px 15px;
     width           : 1000px;
